@@ -50,9 +50,26 @@ const Navbar = () => {
         </div>
         <div className="right">
           <div className={`dropdown ${openMenu ? "open" : ""}`}>
+            <span className="left-links">
+              <div className="item">
+                <Link className="link" to="/products/1">
+                  Women
+                </Link>
+              </div>
+              <div className="item">
+                <Link className="link" to="/products/2">
+                  Men
+                </Link>
+              </div>
+              <div className="item">
+                <Link className="link" to="/products/3">
+                  Children
+                </Link>
+              </div>
+            </span>
             <div className="item">
               <Link className="link" to="/">
-                Homepage
+                Home
               </Link>
             </div>
             <div className="item">
@@ -77,18 +94,16 @@ const Navbar = () => {
               <MenuIcon />
             </span>
             <PersonOutlineOutlinedIcon />
-            <FavoriteBorderOutlinedIcon />
+            <FavoriteBorderOutlinedIcon className="extra-icons"/>
             <div className="cartIcon" onClick={toggleCart}>
               <ShoppingCartOutlinedIcon />
               <span>{products.length}</span>
             </div>
-            {/* <div className="item">
-              <img src="/img/en.png" alt="" />
-              <KeyboardArrowDownIcon />
-            </div> */}
             <div className="item">
+              <span className="extra-icons">
               <span>USD</span>
               <KeyboardArrowDownIcon />
+              </span>
             </div>
           </div>
         </div>
