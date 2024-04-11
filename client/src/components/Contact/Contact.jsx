@@ -10,8 +10,8 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="wrapper">
-        <span>BE IN TOUCH WITH US:</span>
         <div className="mail">
+          <span>STAY IN TOUCH:</span>
           <input type="text" placeholder="Enter your e-mail..." />
           <button>JOIN US</button>
         </div>
