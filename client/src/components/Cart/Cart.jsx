@@ -31,14 +31,13 @@ const Cart = () => {
       await stripe.redirectToCheckout({
         sessionId: res.data.stripeSession.id,
       });
-
     } catch (err) {
       console.log(err);
     }
   };
   return (
     <div className="cart">
-      <h1>Products in your cart</h1>
+      <h1>PRODUCTS IN YOUR CART</h1>
       {products?.map((item) => (
         <div className="item" key={item.id}>
           <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />

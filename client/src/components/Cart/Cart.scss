@@ -12,7 +12,7 @@
     margin-bottom: 30px;
     color: gray;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .item {
@@ -67,15 +67,16 @@
     gap: 20px;
     cursor: pointer;
     border: none;
-    background-color: #2879fe;
+    background-color: #795548;
     color: white;
     font-weight: 500;
     margin-bottom: 20px;
   }
 
-  .reset{
-    color:red;
+  .reset {
+    color: #7193a8;
     font-size: 12px;
+    font-weight: bold;
     cursor: pointer;
   }
 }
