@@ -50,23 +50,6 @@ const Navbar = () => {
         </div>
         <div className="right">
           <div className={`dropdown ${openMenu ? "open" : ""}`}>
-            <span className="left-links">
-              <div className="item">
-                <Link className="link" to="/products/1">
-                  Women
-                </Link>
-              </div>
-              <div className="item">
-                <Link className="link" to="/products/2">
-                  Men
-                </Link>
-              </div>
-              <div className="item">
-                <Link className="link" to="/products/3">
-                  Children
-                </Link>
-              </div>
-            </span>
             <div className="item">
               <Link className="link" to="/">
                 Home
@@ -87,6 +70,23 @@ const Navbar = () => {
                 Store
               </Link>
             </div>
+            <span className="left-links">
+              <div className="item">
+                <Link className="link" to="/products/1">
+                  Women
+                </Link>
+              </div>
+              <div className="item">
+                <Link className="link" to="/products/2">
+                  Men
+                </Link>
+              </div>
+              <div className="item">
+                <Link className="link" to="/products/3">
+                  Children
+                </Link>
+              </div>
+            </span>
           </div>
           <div className="icons">
             <SearchIcon />
@@ -101,7 +101,7 @@ const Navbar = () => {
             </div>
             <div className="item">
               <span className="extra-icons">
-              <span>USD</span>
+              <span id="currency">USD</span>
               <KeyboardArrowDownIcon />
               </span>
             </div>

@@ -3,7 +3,7 @@
   background-color: #fff;
 
   .wrapper {
-    padding: 10px 15px;
+    padding: 15px 15px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -37,9 +37,9 @@
       .dropdown {
         position: absolute;
         top: 100%;
-        right: 0;
+        right: 30%;
         background-color: white;
-        width: 100%;
+        width: 50%;
         display: none;
         flex-direction: column;
         gap: 10px;
@@ -54,12 +54,17 @@
           display: none;
         }
       }
-
+      #currency {
+        font-size: 16px;
+        position: relative;
+        top: -5px;
+      }
       .icons {
         display: flex;
         gap: 10px;
         color: #777;
         cursor: pointer;
+        
       }
 
       .searchIcon {
@@ -97,7 +102,7 @@
    display: none;
   }
   .navbar .wrapper{
-    gap: 36px;
+    gap: 40px;
 
     .right {
       .dropdown {
@@ -117,23 +122,25 @@
     flex: 1;
 
     .link{
-      font-size: 16px;
+      font-size: 24px;
     }
   }
-  .right {
-    margin-top: 8px;
-    flex: 2;
-  }
+
   
     
   .icons svg{
-    font-size: 16px;
+    font-size: 18px;
   
   }
-  
-  .icons .extra-icons{
-    display: none;
+  .left-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
+  
+  // .icons .extra-icons{
+  //   display: none;
+  // }
   .icons .item .extra-icons{
     display: none;
   }
@@ -143,9 +150,10 @@
 
   .dropdown {
     .left-links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      
 
       .item {
         font-size: 14px;
