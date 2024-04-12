@@ -39,3 +39,29 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .slider {
+    height: calc(60vh - 60px);
+  }
+  .slider .icons {
+    color: black;
+    bottom: 40px
+    
+  }
+  .slider .icons .icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: white;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 320px) {
+ 
+}
